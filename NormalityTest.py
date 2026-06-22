@@ -2,7 +2,7 @@
 import yfinance as yf
 from scipy.stats import skew, kurtosis, jarque_bera, probplot
 import matplotlib.pyplot as plt
-from data_utilse import get_returns
+from data_utils import get_returns
 
 # Creating Variables
 returns = get_returns("AAPL")

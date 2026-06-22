@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 from InverseNormal import inverseNormal
 from scipy.stats import t
-from data_utilse import get_returns
+from data_utils import get_returns
 
 # Creating Variables
 returns = get_returns("AAPL")
