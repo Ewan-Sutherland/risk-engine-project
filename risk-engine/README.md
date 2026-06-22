@@ -3,7 +3,7 @@
 The goal of this project was to create a market risk engine that estimates the Value at Risk (VaR) for single assets and portfolios.
 I did this using four individual methods, and then backtested those methods against real price history to verify they held up as expected.
 
-This project was built from ground up, including creating an inverse normal quantile function by hand to have a closer look and develop a greater understanding of the statistic behind it and how we can actually compute it. SciPy and known results are used to verify my own computations.
+This project was built from the ground up, including creating an inverse normal quantile function by hand to have a closer look and develop a greater understanding of the statistic behind it and how we can actually compute it. SciPy and known results are used to verify my own computations.
 
 **The four methods**
 
@@ -24,7 +24,7 @@ Real returns are fat-tailed, and a normal model understates extreme risk. This i
 
 **Looking at a diversified portfolio**
 
-I was able to quantify the benefits of portfolio diversification by looking at an equally weighted portfolio of AAPL/JPM/XOM which had a 95% VaR of ≈ 2.36%, versus ≈ 3.03% if the three assets moved in lockstep. This is a diversification benefit of ≈ 0.66 percentage points with (≈ 22%) arising entirely from the off-diagonal covariances.
+I was able to quantify the benefits of portfolio diversification by looking at an equally weighted portfolio of AAPL/JPM/XOM which had a 95% VaR of ≈ 2.36%, versus ≈ 3.03% if the three assets moved in lockstep. This is a diversification benefit of ≈ 0.66 percentage points (≈ 22%) arising entirely from the off-diagonal covariances.
 
 **The Files:**
 
